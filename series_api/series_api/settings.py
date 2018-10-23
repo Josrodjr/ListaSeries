@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'peliculas',
     'rating',
     'episodes',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
