@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'peliculas',
     'rating',
     'episodes',
+    'asignment',
     'rest_framework',
 ]
 
