@@ -8,6 +8,7 @@ class Espisode(models.Model):
   episode_number = models.IntegerField()
   name = models.CharField(max_length = 25)
   plot = models.TextField()
-  rating = models.DecimalField(max_digits=2, decimal_places=2)
+  # rating = models.DecimalField(max_digits=2, decimal_places=2)
+  rating = models.FloatField()
   release_date = models.DateField()
 
