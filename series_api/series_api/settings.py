@@ -146,7 +146,7 @@ DATABASES = {
         'NAME': 'aa18yjatx7xtjxb',
         'USER': 'postgres',
         'PASSWORD': 'postgres123',
-        'HOST': 'ct3jmwrvct87.us-east-1.rds.amazonaws.com',
+        'HOST': 'aa18yjatx7xtjxb.ct3jmwrvct87.us-east-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
