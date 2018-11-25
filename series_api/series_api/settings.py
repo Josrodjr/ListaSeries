@@ -177,14 +177,25 @@ WSGI_APPLICATION = 'series_api.wsgi.application'
 
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.environ['RDS_DB_NAME'],
+#         'USER': os.environ['RDS_USERNAME'],
+#         'PASSWORD': os.environ['RDS_PASSWORD'],
+#         'HOST': os.environ['RDS_HOSTNAME'],
+#         'PORT': os.environ['RDS_PORT'],
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ['RDS_DB_NAME'],
-        'USER': os.environ['RDS_USERNAME'],
-        'PASSWORD': os.environ['RDS_PASSWORD'],
-        'HOST': os.environ['RDS_HOSTNAME'],
-        'PORT': os.environ['RDS_PORT'],
+        'NAME': 'series_db',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'listaseriesdb.ct3jmwrvct87.us-east-1.rds.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
