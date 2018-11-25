@@ -27,7 +27,7 @@ SECRET_KEY = 'kpzmbhd-oah^tgz=#xe+lxwz=(206=c&9y+j5hpi*jt)18b928'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['listaseriesdb.ct3jmwrvct87.us-east-1.rds.amazonaws.com', 'ListaSeries-dev.us-east-1.elasticbeanstalk.com', 'venv.mvddmk9gpm.us-east-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -177,27 +177,27 @@ WSGI_APPLICATION = 'series_api.wsgi.application'
 
 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': os.environ['RDS_DB_NAME'],
-#         'USER': os.environ['RDS_USERNAME'],
-#         'PASSWORD': os.environ['RDS_PASSWORD'],
-#         'HOST': os.environ['RDS_HOSTNAME'],
-#         'PORT': os.environ['RDS_PORT'],
-#     }
-# }
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'series_db',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'listaseriesdb.ct3jmwrvct87.us-east-1.rds.amazonaws.com',
-        'PORT': '5432',
+        'NAME': os.environ['RDS_DB_NAME'],
+        'USER': os.environ['RDS_USERNAME'],
+        'PASSWORD': os.environ['RDS_PASSWORD'],
+        'HOST': os.environ['RDS_HOSTNAME'],
+        'PORT': os.environ['RDS_PORT'],
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'series_db',
+#         'USER': 'postgres',
+#         'PASSWORD': 'postgres',
+#         'HOST': 'listaseriesdb.ct3jmwrvct87.us-east-1.rds.amazonaws.com',
+#         'PORT': '5432',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
