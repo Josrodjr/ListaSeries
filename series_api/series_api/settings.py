@@ -27,7 +27,7 @@ SECRET_KEY = 'kpzmbhd-oah^tgz=#xe+lxwz=(206=c&9y+j5hpi*jt)18b928'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ListaSeries-dev.us-east-1.elasticbeanstalk.com', 'venv.mvddmk9gpm.us-east-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['listaseriesdb.ct3jmwrvct87.us-east-1.rds.amazonaws.com', 'ListaSeries-dev.us-east-1.elasticbeanstalk.com', 'venv.mvddmk9gpm.us-east-1.elasticbeanstalk.com']
 
 
 # Application definition
