@@ -1,5 +1,20 @@
 # ListaSeries - BACKEND
 
+## EZ installation
+
+### Run first script
+
+```
+01run_in_plain_bash
+```
+### Proceed to path to where the second bash script is (02run_in_env.bat)
+
+### Run the app
+```
+02run_in_env
+```
+
+
 ### pasar los requirements a un nuevo env
 ```
 pip install -r requirements.txt
