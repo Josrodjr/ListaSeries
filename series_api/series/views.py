@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from rest_framework.response import Response
 
 # Create your views here.
 from series.models import Serie
@@ -15,4 +16,4 @@ class SeriesList(generics.ListAPIView):
 
   def get_queryset(self):
     seriename = self.kwargs['serie_name']
-    return Series.objects.filter(nombre=seriename)
+    return Serie.objects.filter(nombre__icontains=seriename)
