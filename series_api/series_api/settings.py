@@ -156,28 +156,28 @@ WSGI_APPLICATION = 'series_api.wsgi.application'
 #     }
 # }
 
-if 'RDS_DB_NAME' in os.environ:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': os.environ['RDS_DB_NAME'],
-            'USER': os.environ['RDS_USERNAME'],
-            'PASSWORD': os.environ['RDS_PASSWORD'],
-            'HOST': os.environ['RDS_HOSTNAME'],
-            'PORT': os.environ['RDS_PORT'],
-        }
-    }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'series_db',
-            'USER': 'postgres',
-            'PASSWORD': 'admin',
-            'HOST': 'localhost',
-            'PORT': '5432',
-        }
-    }
+# if 'RDS_DB_NAME' in os.environ:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#             'NAME': os.environ['RDS_DB_NAME'],
+#             'USER': os.environ['RDS_USERNAME'],
+#             'PASSWORD': os.environ['RDS_PASSWORD'],
+#             'HOST': os.environ['RDS_HOSTNAME'],
+#             'PORT': os.environ['RDS_PORT'],
+#         }
+#     }
+# else:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#             'NAME': 'series_db',
+#             'USER': 'postgres',
+#             'PASSWORD': 'admin',
+#             'HOST': 'localhost',
+#             'PORT': '5432',
+#         }
+#     }
 
 
 
@@ -193,16 +193,16 @@ else:
 #     }
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'series_db',
-#         'USER': 'postgres',
-#         'PASSWORD': 'postgres',
-#         'HOST': 'listaseriesdb.ct3jmwrvct87.us-east-1.rds.amazonaws.com',
-#         'PORT': '5432',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'series_db',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'listaseriesdb.ct3jmwrvct87.us-east-1.rds.amazonaws.com',
+        'PORT': '5432',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
