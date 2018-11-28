@@ -17,3 +17,11 @@ class SeriesList(generics.ListAPIView):
   def get_queryset(self):
     seriename = self.kwargs['serie_name']
     return Serie.objects.filter(name__icontains=seriename)
+
+
+class SerieListId(generics.ListAPIView):
+  serializer_class = SerieSerializer
+
+  def get_queryset(self):
+    queryset = Serie.objects.filter(id=self.kwargs['serieId'])
+    return queryset
