@@ -3,7 +3,7 @@
 from django.db import models
 
 class Serie(models.Model):
-  name = models.CharField(max_length=25)
+  name = models.CharField(max_length=50)
   # Rating solo tiene dos caracteres en los enteros y dos en los decimales
   # total_rating = models.DecimalField(max_digits=2, decimal_places=2)
   total_rating = models.FloatField()
