@@ -34,7 +34,7 @@ pylint-django==2.0.2
 pylint-plugin-utils==0.4
 python-dateutil==2.7.5
 pytz==2018.5
-PyYAML==3.13
+PyYAML==5.4
 semantic-version==2.5.0
 simplegeneric==0.8.1
 six==1.11.0
